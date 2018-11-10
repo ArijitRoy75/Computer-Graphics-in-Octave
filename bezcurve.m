@@ -1,3 +1,7 @@
+%This is an Octave UDF that generates the intermediate points of a cubic Bezier Curve
+%Function cubez() takes a 2x4 matrix as an input and genenerates a 2x101 matrix (p) as an output.
+%The first row of the input and output matrix contains the abcissa of the coordinates and the second row contains the ordinates of the coordinates.
+%The cubez() function generates 99 points in between terminal control points.
 function p=cubez(points)
   if(size(points)==[2,4])
     p=zeros(2,101)
