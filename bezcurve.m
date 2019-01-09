@@ -5,10 +5,6 @@
 %A=[100, 200, 300, 400; 100,50,320,100]
 function p=cubez(points)
   if(size(points)==[2,4])
-    xmin=min(points(1,:))
-    xmax=max(points(1,:))
-    ymin=min(points(2,:))
-    ymax=max(points(2,:))
     p=zeros(2,101)
     bez=zeros(1,4)
     for i =0:100
